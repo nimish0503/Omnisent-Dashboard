@@ -21,7 +21,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     """Load and clean football sentiment dataset."""
-    df = pd.read_csv("european/football_sentiments_all.csv")
+    df = pd.read_csv("football_sentiments_all.csv")
     df["sentiment"] = df["sentiment"].str.capitalize()
 
     # Convert date and extract year
