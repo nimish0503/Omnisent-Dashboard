@@ -1,0 +1,16 @@
+# Virtual environments
+venv/
+.env/
+
+# Large CSV and data files
+*.csv
+!european/football_sentiments_all.csv  # Allow only this one CSV
+*.zip
+*.h5
+*.pkl
+*.pt
+
+# System / cache
+__pycache__/
+*.log
+.DS_Store
